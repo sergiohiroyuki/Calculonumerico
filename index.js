@@ -21,19 +21,18 @@ function funct_de_x(event){
             vetor_y.push(0); 
         }else{
             vetor_y.push(1);
-        }
-
-        
+        } 
         resp_f=0;
     }
-    
+
     for(t=1;t<=2001;t++){
-       if(vetor_y[t -1] != vetor_y[t]){
-            a = (t-1)-2000;
-            b = t-2000;
+        
+       if((vetor_y[t -1] != vetor_y[t]) && vetor_y[t] != undefined){
+            a = (t-1) - 1000;
+            b = t - 1000;
+            vetor_r[t] = `[${a}, ${b}]`;
         } 
-    vetor_r = [a,b];
-    console.log(vetor_y[t]);    
+    console.log(vetor_y[t] + " indice " + t); 
     }
 
     event.preventDefault();
