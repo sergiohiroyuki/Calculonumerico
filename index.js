@@ -1,6 +1,5 @@
 function funct_de_x(event){
     
-    var E = document.getElementById("e").value;
     var resp_f = 0;
     var vetor = [];
     var a, b;
@@ -39,6 +38,8 @@ function funct_de_x(event){
     const resp = document.querySelector(".resp");
     resp.textContent = vetor_r;
 }
+
+
 
 const form = document.getElementById("form")
 form.addEventListener("submit", funct_de_x)

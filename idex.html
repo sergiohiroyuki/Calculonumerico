@@ -8,12 +8,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body id="grad">
-    <div class="aa">
 
-        <label for="lname"> ε = </label>
-        <input type="number" id="e" class="input">
-
-    </div> <br><br><br>
     <div class="aa">
         <form action="" id="form">
             <label for="fname">f(x) =</label>
@@ -52,9 +47,29 @@
             <label for="lname"> . x¹⁰ </label>
 
             <input type="submit" id="submit" value="submit" class="submit">
+
+            <p class="resp"> Resposta </p> 
+            <H3>após receber o retorno da resposta insira o intervalo que deseja</H3> 
         </form>
-            <p class="resp"> Resposta </p>
-       
+            
+
+           
+    </div>
+
+    <div class="bb">
+        <form action="" id="form2">
+            <label for="lname">insira o valor de ε:</label>
+            <input type="number" class="input" id="e" step="any"><br>
+
+            <label for="lname">informe o valor 1 do intervalo:</label>
+            <input type="number" class="input" id="v1" step="any"><br>
+
+            <label for="lname">informe o valor 2 do intervalo:</label>
+            <input type="number" class="input" id="v2" step="any">
+
+            <input type="submit" id="submit2" value="submit" class="submit">
+        </form>
+        <p class="resp2"> Resposta </p>
     </div>
 
     <div class="snowflakes" aria-hidden="true">
@@ -92,4 +107,5 @@
         
 </body>
 <script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="metodoB.js"></script>
 </html>
