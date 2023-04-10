@@ -1,8 +1,8 @@
 
 function metodoB(event){
     var e = document.getElementById("e").value;
-    var v1 = document.getElementById("v1").value;
-    var v2 = document.getElementById("v2").value;
+    var v1 = parseFloat(document.getElementById("v1").value);
+    var v2 = parseFloat(document.getElementById("v2").value);
     var media = 0;
     var vetor = [];
     var resp = 0;
@@ -12,7 +12,9 @@ function metodoB(event){
         vetor.push(parseInt(document.getElementById("num" + z).value));
     }
 
-    media = (v1 + v2)/ 2;
+    media = ((v1) + (v2))/ 2;
+    var cont = 0;
+    console.log(media); 
 
     while(e <= media){
         for(p = 0;p<=10;p++){
@@ -22,15 +24,17 @@ function metodoB(event){
         if(resp > 0){
             v2 = media;
             media = (v1 + v2)/2;
-            vetor_f = `[${v1}, ${v2}]`;
+            vetor_f[cont] = `[${v1}, ${v2}]`;
         }
         else{
             v1 = media;
             media = (v1 + v2)/2;
-            vetor_f = `[${v1}, ${v2}]`;
+            vetor_f[cont] = `[${v1}, ${v2}]`;
         }
-        console.log(vetor_f);  
+        console.log(vetor_f[cont]); 
+        
         resp = 0;
+        cont = cont++;
     }
 
     
