@@ -39,7 +39,5 @@ function funct_de_x(event){
     resp.textContent = vetor_r;
 }
 
-
-
 const form = document.getElementById("form")
 form.addEventListener("submit", funct_de_x)
